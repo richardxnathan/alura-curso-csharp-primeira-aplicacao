@@ -1,8 +1,10 @@
 ﻿// Screen Sound
 
-string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 
-void ExibirMensagemDeBoasVindas()
+string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
+List<string> listaDeBandas = new List<string> { "Joy Divison", "New Order"};
+
+void ExibirLogo()
 {
     Console.WriteLine(@"
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
@@ -17,6 +19,7 @@ void ExibirMensagemDeBoasVindas()
 
 void ExibirMenu()
 {
+    ExibirLogo();
     Console.WriteLine("\nDigite [1] para registrar uma banda.");
     Console.WriteLine("Digite [2] para mostrar todas as bandas.");
     Console.WriteLine("Digite [3] para avaliar uma banda.");
@@ -33,11 +36,11 @@ void ExibirMenu()
         case 0: 
             Console.WriteLine("Até breve!");
             break;
-        case 1: 
-            Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
+        case 1:
+            RegistrarBanda();
             break;
         case 2:
-            Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
+            MostrarBandas();
             break;
         case 3:
             Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
@@ -54,5 +57,39 @@ void ExibirMenu()
 
 }
 
-ExibirMensagemDeBoasVindas();
+void RegistrarBanda()
+{
+    Console.Clear();
+    Console.WriteLine("Registro de Bandas");
+    Console.Write("\nDigite o nome da banda: ");
+    string nomeBanda = Console.ReadLine()!;
+    listaDeBandas.Add(nomeBanda);
+    Console.WriteLine($"\nA banda {nomeBanda} foi registrada com sucesso.");
+    Thread.Sleep(2000);
+    Console.Clear();
+    ExibirMenu();
+}
+
+void MostrarBandas()
+{
+    Console.Clear();
+    Console.WriteLine("Lista das Bandas Registradas\n");
+
+    //for (int i = 0; i < listaDeBandas.Count; i++)
+    //{
+    //    Console.WriteLine($"Banda: {listaDeBandas[i]}");
+    //}
+
+    foreach (string banda in listaDeBandas)
+    {
+        Console.WriteLine($"Banda: {banda}");
+    }
+
+    Console.WriteLine("\nPressione enter para voltar ao menu principal.");
+    Console.ReadKey();
+
+    Console.Clear();
+    ExibirMenu();
+}
+
 ExibirMenu();
