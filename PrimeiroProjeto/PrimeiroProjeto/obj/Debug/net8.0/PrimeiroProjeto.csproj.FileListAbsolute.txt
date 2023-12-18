@@ -12,3 +12,4 @@ C:\Users\richa\Desktop\GIT\alura-curso-csharp-primeira-aplicacao\PrimeiroProjeto
 C:\Users\richa\Desktop\GIT\alura-curso-csharp-primeira-aplicacao\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.pdb
 C:\Users\richa\Desktop\GIT\alura-curso-csharp-primeira-aplicacao\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.genruntimeconfig.cache
 C:\Users\richa\Desktop\GIT\alura-curso-csharp-primeira-aplicacao\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\ref\PrimeiroProjeto.dll
+C:\Users\richa\Desktop\GIT\alura-curso-csharp-primeira-aplicacao\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.sourcelink.json
