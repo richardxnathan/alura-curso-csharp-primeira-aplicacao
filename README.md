@@ -1,4 +1,4 @@
-# C#: criando sua primeira aplicação
+# C#: criando minha primeira aplicação
 
 ## O que aprendi neste curso:
 
